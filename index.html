@@ -1,56 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calculator.css">
-    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Modern Calculator</title>
+    <style>
+    </style>
 </head>
+
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Calculator with Floating Circles</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <div class="background-circles">
-        
-        <div class="circle circle1"></div>
-        <div class="circle circle2"></div>
-        <div class="circle circle3"></div>
-        <div class="circle circle4"></div>
-        <div class="circle circle5"></div>
-    </div>
     <div class="calculator">
         <div class="display">
-            <input class="calc-input" type="text" />
-            <output class="calc-output"></output>
+            <div class="expression" id="expression"></div>
+            <div class="display-text" id="display">0</div>
         </div>
-        <div class="keys">
-            <button>AC</button>
-            <button>⌫</button>
-            <button>/</button>
-            <button>*</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>-</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>+</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>=</button>
-            <button class="zero">0</button>
-            <button>.</button>
+        <div class="buttons">
+            <button class="btn-clear" onclick="clearDisplay()">C</button>
+            <button class="btn-operator" onclick="inputOperator('/')">&div;</button>
+            <button class="btn-operator" onclick="inputOperator('*')">&times;</button>
+            <button class="btn-operator" onclick="deleteLast()">&larr;</button>
+
+            <button class="btn-number" onclick="inputNumber('7')">7</button>
+            <button class="btn-number" onclick="inputNumber('8')">8</button>
+            <button class="btn-number" onclick="inputNumber('9')">9</button>
+            <button class="btn-operator" onclick="inputOperator('-')">-</button>
+
+            <button class="btn-number" onclick="inputNumber('4')">4</button>
+            <button class="btn-number" onclick="inputNumber('5')">5</button>
+            <button class="btn-number" onclick="inputNumber('6')">6</button>
+            <button class="btn-operator" onclick="inputOperator('+')">+</button>
+
+            <button class="btn-number" onclick="inputNumber('1')">1</button>
+            <button class="btn-number" onclick="inputNumber('2')">2</button>
+            <button class="btn-number" onclick="inputNumber('3')">3</button>
+            <button class="btn-equals" onclick="calculate()" rowspan="2">=</button>
+
+            <button class="btn-number btn-zero" onclick="inputNumber('0')">0</button>
+            <button class="btn-decimal" onclick="inputNumber('.')">.</button>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="index.js">
+
+    </script>
 </body>
 
 </html>
-
